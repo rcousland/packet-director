@@ -13,6 +13,5 @@ if (Meteor.isClient){
 		'change .js-dst-limit':function(event){
 			$(".js-dst-input").toggle(300);
 		}
-	})
-
-}
+	}) // Template.demo.events
+} // (Meteor.isClient)
