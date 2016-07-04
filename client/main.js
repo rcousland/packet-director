@@ -1,4 +1,5 @@
 Meteor.startup(function () {
+	// add smoothscroll funcitonality on startup
     smoothScroll.init();
 });
 
