@@ -23,34 +23,29 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" data-scroll href="#home">Packet Director</a>
-    </div>
+    </div> <!-- /navbar-header  -->
+	
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a data-scroll href="#howitworks">How it works</a></li>
         <li><a data-scroll href="#benefits">Benefits</a></li>
         <li><a data-scroll href="#demo">Demo</a></li>
-
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-
-      </ul>
-    </div>
-  </div>
+      <ul class="nav navbar-nav navbar-right"></ul>
+    </div> <!-- /navbar-collapse  -->
+  </div> <!-- /container-fluid  -->
 </nav>
-</template>
-<!-- end of nav template -->
+</template> <!-- end of nav template -->
 
 <template name="howitworks">
   <div id= "howitworks" class="container">
   <div class="jumbotron">
     <h1>How It works</h1>
     <p>Select your entry and exit points for your packets. And we will provide you with an I.P address in each location. When you connect to the I.P address, the packets will be sent to the destination though our private network(WAN/Circuit). The IP headers in the packets are also translated so applications dont get confused. The application will only see the I.P that is closest to it.</p>
-  </div>
+  </div> <!-- /jumbotron  -->
 
-</div>
-</template>
-
-<!-- end of howitworks template -->
+</div> <!-- /container  -->
+</template> <!-- end of howitworks template -->
 
 <template name="demo">
   <div id= "demo" class="container">
@@ -61,8 +56,8 @@
         <div class="form-group">
           <div class="row">
             <div class="col-sm-6"> <!-- split container in half -->
-            <div class="row">
-            <br>
+              <div class="row">
+                <br>
                 <div class="col-sm-12">
                   <label for="sel1">Source list (select one):</label>
                   <select class="form-control" id="sel1">
@@ -74,26 +69,26 @@
                 </div> <!-- /col-sm-12 -->
               </div> <!-- /row -->
 
-                <div class="row">
-                <div class="checkbox col-sm-12">
-                  <label><input type="checkbox" value="" class="js-src-limit">Limit Source IP and Port</label>
-                </div> <!-- /col-sm-12  -->
-                </div> <!-- /row -->
+              <div class="row">
+					     <div class="checkbox col-sm-12">
+					       <label><input type="checkbox" value="" class="js-src-limit">Limit Source IP and Port</label>
+					     </div> <!-- /col-sm-12  -->
+              </div> <!-- /row -->
                 <div class="js-src-input">
                   <div class="row">
-                  <div class="col-sm-12">
-                    <label for="src-ip">Source IP</label>
-                    <input type="text" class="form-control" id="src-ip-txt">
-                  </div> <!-- /col-sm-12  -->
-                  </div> <!-- /row -->
+					         <div class="col-sm-12">
+						        <label for="src-ip">Source IP</label>
+						        <input type="text" class="form-control" id="src-ip-txt">
+					         </div> <!-- /col-sm-12  -->
+					    </div> <!-- /row -->
 
-                  <div class="row">
-                  <div class="col-sm-12">
-                    <label for="src-port">Source Port Range (leave empty for all ports)</label>
-                    <input type="text" class="form-control" id="src-port-txt">
-                  </div> <!-- /col-sm-12  -->
-                  </div> <!-- /row -->
-                </div> <!-- /js-src-input -->
+    					  <div class="row">
+    					     <div class="col-sm-12">
+    						      <label for="src-port">Source Port Range (leave empty for all ports)</label>
+    						      <input type="text" class="form-control" id="src-port-txt">
+    					     </div> <!-- /col-sm-12  -->
+                </div> <!-- /row -->
+              </div> <!-- /js-src-input -->
 
 
             </div> <!-- /col-sm-6 -->
@@ -110,25 +105,25 @@
                     <option>Sydney, AUS</option>
                   </select>
                 </div><!-- /col-sm-12 -->
-                </div> <!-- /row -->
+              </div> <!-- /row -->
 
                 <div class="row">
-                <div class="checkbox col-sm-12 centering">
-                  <label><input type="checkbox" value="" class="js-dst-limit">Limit Destination IP and Port</label>
-                </div> <!-- /col-sm-12  -->
+					<div class="checkbox col-sm-12 centering">
+					  <label><input type="checkbox" value="" class="js-dst-limit">Limit Destination IP and Port</label>
+					</div> <!-- /col-sm-12  -->
                 </div> <!-- /row -->
                 <div class="js-dst-input">
                   <div class="row">
-                  <div class="col-sm-12">
-                    <label for="dst-ip">Destination IP</label>
-                    <input type="text" class="form-control" id="dst-ip">
-                  </div> <!-- /col-sm-12  -->
+					  <div class="col-sm-12">
+						<label for="dst-ip">Destination IP</label>
+						<input type="text" class="form-control" id="dst-ip">
+					  </div> <!-- /col-sm-12  -->
                   </div> <!-- /row -->
                   <div class="row">
-                  <div class="col-sm-12">
-                    <label for="dst-port">Destination Port Range (leave empty for all ports)</label>
-                    <input type="text" class="form-control" id="dst-port">
-                  </div> <!-- /col-sm-12  -->
+					  <div class="col-sm-12">
+						<label for="dst-port">Destination Port Range (leave empty for all ports)</label>
+						<input type="text" class="form-control" id="dst-port">
+					  </div> <!-- /col-sm-12  -->
                   </div> <!-- /row -->
                 </div> <!-- /js-dst-input -->
 
@@ -156,9 +151,7 @@
       </form>
     </div> <!-- /jumbotron  -->
   </div> <!-- /container  --> 
-</template>
-
-<!-- end of demo template -->
+</template> <!-- end of demo template -->
 
 <template name="benefits">
   <div id="benefits" class="container">
@@ -166,8 +159,6 @@
     <h1>Benefits</h1>
     <p>This will reduce the amount of internet hops and latency your packets travel internationally. The ISP's between you and your destination are not providing you the highest speed or consistency. This is crucial for real-time applications like live video conferencing, video streaming or stock trading.</p>
     <p>Another reason is to avoid jursdictions that capture traffic flowing over the public internet. Even if it is encrypted. The data could therotically be decrypted later down the track when encyption vulnerabilities are found. Or when faster processing power is available.</p>
-  </div>
-
-</div>
-</template>
-<!-- end of benefits template -->
+  </div><!-- /jumbotron  -->
+</div><!-- /container  -->
+</template> <!-- end of benefits template -->
