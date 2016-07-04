@@ -1,4 +1,6 @@
 /* CSS declarations go here */
+
+/* Hide Input boxes for Ip addresses on page load */
 .js-src-input, .js-dst-input{
 	display: none;
 }
