@@ -1,0 +1,4 @@
+/* CSS declarations go here */
+.js-src-input, .js-dst-input{
+	display: none;
+}
